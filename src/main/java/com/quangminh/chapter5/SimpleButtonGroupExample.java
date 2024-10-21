@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-public class SimpleButtônGroupExample {
+public class SimpleButtonGroupExample {
     public static void main(String[] args) {
         // Some choices
         JRadioButton choice1, choice2, choice3;
