@@ -8,7 +8,7 @@ public class GuiScreens {
         Rectangle virtualBounds = new Rectangle();
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice[] gs = ge.getScreenDevices();
-        JFrame frame[][] = new JFrame[gs.length][];
+        JFrame[][] frame = new JFrame[gs.length][];
         for (int j = 0; j < gs.length; j++) {
             GraphicsDevice gd = gs[j];
             System.out.println("Device " + j + ": " + gd);

@@ -34,7 +34,7 @@ public class ScrollBarExample extends JPanel {
         }
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("Scroll Bar Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new ScrollBarExample());

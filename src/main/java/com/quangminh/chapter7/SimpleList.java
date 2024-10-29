@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SimpleList extends JPanel {
-    String label[] = { "Zero","One","Two","Three","Four","Five","Six",
+    String[] label = { "Zero","One","Two","Three","Four","Five","Six",
             "Seven","Eight","Nine","Ten","Eleven" };
     JList list;
 
@@ -21,7 +21,7 @@ public class SimpleList extends JPanel {
         add(button, BorderLayout.SOUTH);
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("Simple List Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new SimpleList());
@@ -32,7 +32,7 @@ public class SimpleList extends JPanel {
     // An inner class to respond to clicks on the Print button
     class PrintListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            int selected[] = list.getSelectedIndices();
+            int[] selected = list.getSelectedIndices();
             System.out.println("Selected Elements:  ");
 
             for (int i=0; i < selected.length; i++) {

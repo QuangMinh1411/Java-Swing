@@ -60,7 +60,7 @@ public class ToolbarFrame3 extends Frame {
         add(lnfPanel, BorderLayout.SOUTH);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ToolbarFrame3 tf3 = new ToolbarFrame3();
         tf3.setVisible(true);
     }

@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class OvalIcon implements Icon {
-    private int width,height;
+    private final int width;
+    private final int height;
     public OvalIcon(int w, int h) {
         width = w;
         height = h;

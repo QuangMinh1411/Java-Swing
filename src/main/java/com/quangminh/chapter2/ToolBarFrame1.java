@@ -43,7 +43,7 @@ public class ToolBarFrame1 extends Frame {
         add(toolbar, BorderLayout.NORTH);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ToolBarFrame1 tf1 = new ToolBarFrame1();
         tf1.setVisible(true);
     }

@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ListExample extends JPanel {
-    private BookEntry books[] = {
+    private final BookEntry[] books = {
             new BookEntry("Ant: The Definitive Guide", "src/main/java/com/quangminh/chapter7/covers/ant.gif"),
             new BookEntry("Database Programming with JDBC and Java",
                     "src/main/java/com/quangminh/chapter7/covers/jdbc.gif"),
@@ -53,7 +53,7 @@ public class ListExample extends JPanel {
         add(button, BorderLayout.SOUTH);
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("List Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new ListExample());
@@ -64,7 +64,7 @@ public class ListExample extends JPanel {
     // An inner class to respond to clicks on the Print button
     class PrintListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            int selected[] = booklist.getSelectedIndices();
+            int[] selected = booklist.getSelectedIndices();
             System.out.println("Selected Elements:  ");
 
             for (int i=0; i < selected.length; i++) {

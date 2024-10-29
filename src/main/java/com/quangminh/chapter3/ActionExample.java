@@ -53,7 +53,7 @@ public class ActionExample extends JPanel {
         }
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         ActionExample example = new ActionExample();
         JFrame frame = new JFrame("Action Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

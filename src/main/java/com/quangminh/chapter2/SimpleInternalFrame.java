@@ -52,13 +52,13 @@ public class SimpleInternalFrame extends Frame {
                 internalFrame = new JInternalFrame("Internal Frame",
                         true, true, true, true);
                 internalFrame.setBounds(50, 50, 200, 100);
-                desktop.add(internalFrame, new Integer(1));
+                desktop.add(internalFrame, Integer.valueOf(1));
                 internalFrame.setVisible(true);
             }
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SimpleInternalFrame sif = new SimpleInternalFrame();
         sif.setVisible(true);
     }

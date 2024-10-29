@@ -11,19 +11,19 @@ public class ActionExample extends JFrame {
 
     private int currentChannel = MIN_CHANNEL;
     private int favoriteChannel = 9;
-    private JLabel channelLabel = new JLabel();
+    private final JLabel channelLabel = new JLabel();
 
-    private Action upAction = new UpAction();
-    private Action downAction = new DownAction();
-    private GotoFavoriteAction gotoFavoriteAction = new GotoFavoriteAction();
-    private Action setFavoriteAction = new SetFavoriteAction();
+    private final Action upAction = new UpAction();
+    private final Action downAction = new DownAction();
+    private final GotoFavoriteAction gotoFavoriteAction = new GotoFavoriteAction();
+    private final Action setFavoriteAction = new SetFavoriteAction();
 
     public class UpAction extends AbstractAction {
         public UpAction() {
             putValue(NAME, "Channel Up");
             putValue(SMALL_ICON, new ImageIcon("com/quangminh/chapter5/images/up.gif"));
             putValue(SHORT_DESCRIPTION, "Increment the channel number");
-            putValue(MNEMONIC_KEY, new Integer(KeyEvent.VK_U));
+            putValue(MNEMONIC_KEY, Integer.valueOf(KeyEvent.VK_U));
         }
         public void actionPerformed(ActionEvent ae) {
             setChannel(currentChannel+1);
@@ -35,7 +35,7 @@ public class ActionExample extends JFrame {
             putValue(NAME, "Channel Down");
             putValue(SMALL_ICON, new ImageIcon("com/quangminh/chapter5/images/down.gif"));
             putValue(SHORT_DESCRIPTION, "Decrement the channel number");
-            putValue(MNEMONIC_KEY, new Integer(KeyEvent.VK_D));
+            putValue(MNEMONIC_KEY, Integer.valueOf(KeyEvent.VK_D));
         }
         public void actionPerformed(ActionEvent ae) {
             setChannel(currentChannel-1);
@@ -45,7 +45,7 @@ public class ActionExample extends JFrame {
     public class GotoFavoriteAction extends AbstractAction {
         public GotoFavoriteAction() {
             putValue(SMALL_ICON, new ImageIcon("com/quangminh/chapter5/images/fav.gif"));
-            putValue(MNEMONIC_KEY, new Integer(KeyEvent.VK_G));
+            putValue(MNEMONIC_KEY, Integer.valueOf(KeyEvent.VK_G));
             updateProperties();
         }
         public void updateProperties() {
@@ -63,7 +63,7 @@ public class ActionExample extends JFrame {
             putValue(SMALL_ICON, new ImageIcon("com/quangminh/chapter5/images/set.gif"));
             putValue(SHORT_DESCRIPTION,
                     "Make current channel the Favorite channel");
-            putValue(MNEMONIC_KEY, new Integer(KeyEvent.VK_S));
+            putValue(MNEMONIC_KEY, Integer.valueOf(KeyEvent.VK_S));
         }
         public void actionPerformed(ActionEvent ae) {
             favoriteChannel = currentChannel;
@@ -112,7 +112,7 @@ public class ActionExample extends JFrame {
         setFavoriteAction.setEnabled(currentChannel != favoriteChannel);
     }
 
-    public static void main(String argv[]) {
+    public static void main(String[] argv) {
         JFrame f = new ActionExample();
         f.setSize(400, 180);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

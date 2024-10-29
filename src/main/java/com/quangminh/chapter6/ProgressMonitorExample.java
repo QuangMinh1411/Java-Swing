@@ -22,7 +22,7 @@ public class ProgressMonitorExample extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         UIManager.put("ProgressMonitor.progressText", "This is progress?");
         UIManager.put("OptionPane.cancelButtonText", "Go Away");
         new ProgressMonitorExample();

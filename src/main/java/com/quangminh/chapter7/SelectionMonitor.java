@@ -6,9 +6,9 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
 public class SelectionMonitor extends JPanel {
-    String label[] = { "Zero","One","Two","Three","Four","Five","Six",
+    String[] label = { "Zero","One","Two","Three","Four","Five","Six",
             "Seven","Eight","Nine","Ten","Eleven","Twelve" };
-    JCheckBox checks[] = new JCheckBox[label.length];
+    JCheckBox[] checks = new JCheckBox[label.length];
     JList list;
 
     public SelectionMonitor() {
@@ -34,7 +34,7 @@ public class SelectionMonitor extends JPanel {
         add(leftBox, BorderLayout.WEST);
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("Selection Monitor");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new SelectionMonitor());

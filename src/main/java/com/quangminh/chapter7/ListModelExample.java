@@ -38,7 +38,7 @@ public class ListModelExample extends JPanel {
         add(removeButton, BorderLayout.EAST);
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("List Model Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new ListModelExample());

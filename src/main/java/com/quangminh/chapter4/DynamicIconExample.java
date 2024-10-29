@@ -20,7 +20,7 @@ public class DynamicIconExample {
             public void paintIcon(Component c, Graphics g, int x, int y) {
                 g.fill3DRect(x, y, getIconWidth(), getIconHeight(), true);
             }
-        };
+        }
         Icon icon = new DynamicIcon();
         final JLabel dynamicLabel = new JLabel(icon);
 
@@ -29,7 +29,7 @@ public class DynamicIconExample {
             public void stateChanged(ChangeEvent ev) {
                 dynamicLabel.repaint();
             }
-        };
+        }
         Updater updater = new Updater();
 
         width.addChangeListener(updater);

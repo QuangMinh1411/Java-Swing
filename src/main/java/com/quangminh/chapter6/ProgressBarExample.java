@@ -18,7 +18,7 @@ public class ProgressBarExample extends JPanel {
         pbar.setValue(newValue);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         final ProgressBarExample it = new ProgressBarExample();
 
@@ -37,7 +37,8 @@ public class ProgressBarExample extends JPanel {
                     }
                 });
                 java.lang.Thread.sleep(100);
-            } catch (InterruptedException e) {;}
+            } catch (InterruptedException e) {
+            }
         }
     }
 

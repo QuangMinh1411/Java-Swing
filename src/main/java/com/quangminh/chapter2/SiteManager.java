@@ -26,7 +26,7 @@ public class SiteManager extends JFrame {
         addSiteFrame("Sample");
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         SiteManager mgr = new SiteManager();
         mgr.setVisible(true);
     }
@@ -35,13 +35,13 @@ public class SiteManager extends JFrame {
     public void addSiteFrame(String name) {
         SiteFrame sf = new SiteFrame(name, this);
         popups.addElement(sf);
-        desktop.add(sf, new Integer(2));  // Keep sites on top for now
+        desktop.add(sf, Integer.valueOf(2));  // Keep sites on top for now
         sf.setVisible(true);
     }
 
     public void addPageFrame(String name) {
         PageFrame pf = new PageFrame(name, this);
-        desktop.add(pf, new Integer(1));
+        desktop.add(pf, Integer.valueOf(1));
         pf.setVisible(true);
         pf.setIconifiable(true);
         popups.addElement(pf);

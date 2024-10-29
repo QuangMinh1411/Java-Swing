@@ -19,10 +19,11 @@ public class ProgressMonitorInputExample {
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "Unable to find file: "
                     + filename, "Error", JOptionPane.ERROR_MESSAGE);
-        } catch (IOException e) {;}
+        } catch (IOException e) {
+        }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         new ProgressMonitorInputExample(args[0]);
     }
 

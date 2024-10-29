@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ImageLabelExample {
-    private static Icon icon = new ImageIcon("src/main/java/com/quangminh/chapter4/images/smile.gif");
+    private static final Icon icon = new ImageIcon("src/main/java/com/quangminh/chapter4/images/smile.gif");
 
     public static void main(String[] args) {
         JLabel[] labels= new JLabel[9];

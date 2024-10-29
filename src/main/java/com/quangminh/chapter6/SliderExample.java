@@ -21,7 +21,7 @@ public class SliderExample extends JPanel {
         add(slider, BorderLayout.CENTER);
     }
 
-    public static void main(String s[]) {
+    public static void main(String[] s) {
         JFrame frame = new JFrame("Slider Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new SliderExample());
